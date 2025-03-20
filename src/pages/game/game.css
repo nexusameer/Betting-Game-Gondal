@@ -1,0 +1,15 @@
+.mainHeading{
+    text-align: center;
+    font-size: 1.7rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    /* background-color having opsity */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes blink {
+    0% { box-shadow: 0 0 10px 5px red; }
+    50% { box-shadow: none; }
+    100% { box-shadow: 0 0 10px 5px red; }
+}

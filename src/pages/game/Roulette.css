@@ -1,0 +1,89 @@
+.box{
+    width: 45vh;
+    height: 45vh;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.spin {
+    animation: spin 2.5s linear 4;
+}
+
+
+@media (max-width: 320px) {
+    .box{
+        width: 45vh;
+        height: 45vh;
+    }
+}
+
+.mainContainer {
+  display: flex;
+  height: 95px;
+  align-items: flex-start;
+  margin-top: -53px;
+}
+
+
+/* Style for the container */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    position: relative; /* Use relative positioning for the container */
+    align-items: center;
+  }
+  
+  /* Style for each item */
+  .flex-item {
+    width: 60px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 26px; /* Spacing between items */
+    color: white; /* Color for text */
+    position: absolute; /* Use absolute positioning for items */
+    transform-origin: bottom; /* Sets the origin for the rotation */
+    font-size: 20px; /* Adjust as needed */
+    font-weight: bold;
+  }
+  
+  /* Style for the winning number */
+  .flex-item.winning {
+    height: 60px; /* Adjust as needed */
+    z-index: 2; /* Ensure the winning number is above others */
+  }
+  
+  /* Rotate previous item and position it */
+  .flex-item.previous {
+    height: 50px; /* Adjust as needed */
+    border-radius: 10px;
+    right: 0; /* Position from the left */
+    z-index: 1; /* Below the winning number */
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  
+  /* Rotate next item and position it */
+  .flex-item.next {
+    height: 50px; /* Adjust as needed */
+    border-radius: 10px;
+    left: 0; /* Position from the right */
+    z-index: 1; /* Below the winning number */
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+
+  .mainHeading{
+    text-align: center;
+    font-size: 1.7rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    /* background-color having opsity */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
